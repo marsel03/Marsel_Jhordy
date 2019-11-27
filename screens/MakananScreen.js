@@ -6,7 +6,7 @@ const makan = [
     {name: 'Ayam Lalapan', image: 'https://cdn.idntimes.com/content-images/community/2018/04/resep-cara-membuat-ayam-bakar-pedas-manis-45f3388b72056bb4a5ec4015be591b53_600x400.jpg', harga: 'Rp. 20.000'}
 ];
 
-const BuahScreen = () => {
+const MakananScreen = () => {
     return (
         <FlatList 
             data={makan}
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default BuahScreen;
+export default MakananScreen;

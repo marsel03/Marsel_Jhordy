@@ -1,21 +1,21 @@
 import React from 'react';
 import { Text, Button, View, StyleSheet, ImageBackground,TouchableOpacity, Image, Alert, FlatList } from 'react-native';
 
-const HomeScreen = ({ navigation }) => {
+const MenuScreen = ({ navigation }) => {
     return (
         <ImageBackground 
             source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQRAiHGGkZvf5ofUp5uXjM96pUAdbjBgHj0bDJiUlFIlimxPP0'}}
             style={{width: 400, height: 800}}
         >
             <View style={styles.listContainer}>
-                <TouchableOpacity style = {[styles.card, {backgroundColor:'#E0FFFF'}]} onPress={() => navigation.navigate('Menu')} >
-                    <Image style={styles.cardImage} source={{uri:"https://cdn.pixabay.com/photo/2013/07/12/12/03/food-145188_960_720.png"}}/>
+                <TouchableOpacity style = {[styles.card, {backgroundColor:'#87CEEB'}]} onPress={() => navigation.navigate('Makan')} >
+                    <Image style={styles.cardImage} source={{uri:"https://cdn.pixabay.com/photo/2016/03/31/21/15/bread-1296280_960_720.png"}}/>
                 </TouchableOpacity>
-                <Text>Menu Makanan dan Minuman</Text>
-                <TouchableOpacity style = {[styles.card, {backgroundColor:'#4682B4'}]} onPress={() => navigation.navigate('About')} >
-                <Image style={styles.cardImage} source={{uri:"https://img.icons8.com/color/70/000000/name.png"}}/>
+                <Text>Makanan</Text>
+                <TouchableOpacity style = {[styles.card, {backgroundColor:'#87CEEB'}]} onPress={() => navigation.navigate('Minum')} >
+                    <Image style={styles.cardImage} source={{uri:"https://pngimage.net/wp-content/uploads/2018/06/minuman-vector-png-2.png"}}/>
                 </TouchableOpacity>
-                <Text>Ebout</Text>
+                <Text>Minuman</Text>
             </View>
         </ImageBackground>
     );
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default HomeScreen;
+export default MenuScreen;

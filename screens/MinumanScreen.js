@@ -6,7 +6,7 @@ const minum = [
     {name: 'Juice Alpukat', image: 'http://4.bp.blogspot.com/-zGYPIYHr7pE/VH2KVsjFzYI/AAAAAAAAAXc/F99LyvjPUzo/s1600/Alpokat%2BPNG.png', harga: 'Rp. 8.000'}
 ];
 
-const SayurScreen = () => {
+const MinumanScreen = () => {
     return (
         <FlatList 
             data={minum}
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default SayurScreen;
+export default MinumanScreen;
